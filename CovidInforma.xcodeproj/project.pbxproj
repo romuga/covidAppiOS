@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		91E04DDF258070CF00C73307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E04DDD258070CF00C73307 /* Main.storyboard */; };
 		91E04DE1258070D200C73307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E04DE0258070D200C73307 /* Assets.xcassets */; };
 		91E04DE4258070D200C73307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E04DE2258070D200C73307 /* LaunchScreen.storyboard */; };
+		91E1321425847FA7006F563C /* SintomasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1321325847FA7006F563C /* SintomasViewController.swift */; };
+		91E1321725847FC8006F563C /* StatusCovidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1321625847FC8006F563C /* StatusCovidViewController.swift */; };
+		91E1321A25848002006F563C /* MedidasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E1321925848002006F563C /* MedidasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		91E04DE0258070D200C73307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91E04DE3258070D200C73307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91E04DE5258070D200C73307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E1321325847FA7006F563C /* SintomasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SintomasViewController.swift; sourceTree = "<group>"; };
+		91E1321625847FC8006F563C /* StatusCovidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCovidViewController.swift; sourceTree = "<group>"; };
+		91E1321925848002006F563C /* MedidasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidasViewController.swift; sourceTree = "<group>"; };
 		AA62195CCCEA9E0D7DB8C800 /* Pods-CovidInforma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidInforma.release.xcconfig"; path = "Target Support Files/Pods-CovidInforma/Pods-CovidInforma.release.xcconfig"; sourceTree = "<group>"; };
 		C8A70965762849CEF50F9FD4 /* Pods_CovidInforma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidInforma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +84,9 @@
 				91E04DE0258070D200C73307 /* Assets.xcassets */,
 				91E04DE2258070D200C73307 /* LaunchScreen.storyboard */,
 				91E04DE5258070D200C73307 /* Info.plist */,
+				91E1321325847FA7006F563C /* SintomasViewController.swift */,
+				91E1321625847FC8006F563C /* StatusCovidViewController.swift */,
+				91E1321925848002006F563C /* MedidasViewController.swift */,
 			);
 			path = CovidInforma;
 			sourceTree = "<group>";
@@ -88,7 +97,6 @@
 				704B9545EF6E615F8D4D54FD /* Pods-CovidInforma.debug.xcconfig */,
 				AA62195CCCEA9E0D7DB8C800 /* Pods-CovidInforma.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,8 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91E1321425847FA7006F563C /* SintomasViewController.swift in Sources */,
 				91E04DDC258070CF00C73307 /* ViewController.swift in Sources */,
+				91E1321725847FC8006F563C /* StatusCovidViewController.swift in Sources */,
 				91E04DD8258070CF00C73307 /* AppDelegate.swift in Sources */,
+				91E1321A25848002006F563C /* MedidasViewController.swift in Sources */,
 				91E04DDA258070CF00C73307 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
