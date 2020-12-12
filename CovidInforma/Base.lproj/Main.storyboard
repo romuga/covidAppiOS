@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KtU-To-v4c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -8,55 +8,152 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--¿Qué es el COVID-19?-->
         <scene sceneID="k7t-zy-5T3">
             <objects>
-                <viewController id="R0d-JP-OEo" sceneMemberID="viewController">
+                <viewController id="R0d-JP-OEo" customClass="ViewController" customModule="CovidInforma" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ela-wM-xKB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdO-GT-SxR">
-                                <rect key="frame" x="81" y="559" width="253" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28223448010000002" green="0.64915596180000001" blue="0.67877538069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZjX-77-5sa">
+                                <rect key="frame" x="24.5" y="113" width="365" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-HC-3V1">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="leJ-LF-e20">
+                                        <rect key="frame" x="37" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="RpA-ie-0eI">
+                                        <rect key="frame" x="74" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="ipg-va-pxG">
+                                        <rect key="frame" x="111" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="sSb-yp-IQs">
+                                        <rect key="frame" x="148" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="PlO-wV-90i">
+                                        <rect key="frame" x="185" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="MfV-5J-5Jl">
+                                        <rect key="frame" x="222" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="863-0Y-gd3">
+                                        <rect key="frame" x="259" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="nkk-U6-SUK">
+                                        <rect key="frame" x="296" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="ZX1-aC-hnB">
+                                        <rect key="frame" x="333" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I5Z-FE-xcP">
+                                <rect key="frame" x="24.5" y="515" width="365" height="32"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="WZD-Yh-qDC">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="v1u-a3-UxN">
+                                        <rect key="frame" x="37" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="hxO-PO-8DN">
+                                        <rect key="frame" x="74" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="Ktd-Yh-0l1">
+                                        <rect key="frame" x="111" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="qSd-9d-y0j">
+                                        <rect key="frame" x="148" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="EQY-KH-Xea">
+                                        <rect key="frame" x="185" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="krQ-b3-iNP">
+                                        <rect key="frame" x="222" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="L59-uF-5Bg">
+                                        <rect key="frame" x="259" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="rhx-pk-2U3">
+                                        <rect key="frame" x="296" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCovid" translatesAutoresizingMaskIntoConstraints="NO" id="aHi-eJ-XAT">
+                                        <rect key="frame" x="333" y="0.0" width="32" height="32"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-V1-xB8" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="45" y="180" width="324" height="307"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="307" id="vtT-NS-kUH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdO-GT-SxR">
+                                <rect key="frame" x="81" y="627" width="253" height="65"/>
+                                <color key="backgroundColor" red="0.2064703037434818" green="0.45407677664974622" blue="0.32142042496597706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Síntomas">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="XOJ-cR-kC9" kind="show" id="rGU-tf-HFE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCE-Zj-ie3">
-                                <rect key="frame" x="81" y="633" width="253" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28223448010000002" green="0.64915596180000001" blue="0.67877538069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-Ap-EHd">
+                                <rect key="frame" x="81" y="772" width="253" height="69"/>
+                                <color key="backgroundColor" red="0.2064703037434818" green="0.45407677664974622" blue="0.32142042496597706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Medidas de prevención">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5va-q7-ENN" kind="show" id="TSe-Ib-Zlm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCE-Zj-ie3">
+                                <rect key="frame" x="81" y="700" width="253" height="64"/>
+                                <color key="backgroundColor" red="0.2064703037434818" green="0.45407677664974622" blue="0.32142042496597706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="352-0i-oeq"/>
+                                </constraints>
                                 <state key="normal" title="Casos por país">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="BJq-dx-SXR"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="F9R-I4-m6v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3G7-Ap-EHd">
-                                <rect key="frame" x="81" y="707" width="253" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.28223448010000002" green="0.64915596180000001" blue="0.67877538069999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Medidas de sanidad">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8PN-tN-CpP">
-                                <rect key="frame" x="49" y="161" width="316" height="246"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rhu-8M-aGe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3G7-Ap-EHd" firstAttribute="top" secondItem="zCE-Zj-ie3" secondAttribute="bottom" constant="8" id="6oC-fR-7x8"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="leading" secondItem="rhu-8M-aGe" secondAttribute="leading" constant="45" id="9iu-XM-Ccp"/>
+                            <constraint firstAttribute="bottom" secondItem="zCE-Zj-ie3" secondAttribute="bottom" constant="132" id="C8i-Kk-kvM"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="ZjX-77-5sa" secondAttribute="centerX" id="CQE-I4-o8e"/>
+                            <constraint firstItem="zCE-Zj-ie3" firstAttribute="leading" secondItem="rhu-8M-aGe" secondAttribute="leading" constant="81" id="EWL-sX-Fr4"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="zCE-Zj-ie3" secondAttribute="centerX" id="JNy-9K-Ill"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="top" secondItem="Ela-wM-xKB" secondAttribute="top" constant="180" id="K5c-g4-xqb"/>
+                            <constraint firstItem="zCE-Zj-ie3" firstAttribute="leading" secondItem="3G7-Ap-EHd" secondAttribute="leading" id="Luz-3U-kob"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="top" secondItem="ZjX-77-5sa" secondAttribute="bottom" constant="35" id="Q55-Mw-JVY"/>
+                            <constraint firstItem="I5Z-FE-xcP" firstAttribute="top" secondItem="TS4-V1-xB8" secondAttribute="bottom" constant="28" id="R3M-a0-gsP"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="3G7-Ap-EHd" secondAttribute="centerX" id="SYX-ti-bYI"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="ZdO-GT-SxR" secondAttribute="centerX" id="Sfb-je-QfB"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="I5Z-FE-xcP" secondAttribute="centerX" id="YD8-Kc-xvL"/>
+                            <constraint firstItem="TS4-V1-xB8" firstAttribute="centerX" secondItem="Ela-wM-xKB" secondAttribute="centerX" id="ePG-EW-KMp"/>
+                            <constraint firstItem="zCE-Zj-ie3" firstAttribute="top" secondItem="ZdO-GT-SxR" secondAttribute="bottom" constant="8" id="r12-SL-Poh"/>
+                            <constraint firstItem="zCE-Zj-ie3" firstAttribute="leading" secondItem="ZdO-GT-SxR" secondAttribute="leading" id="y3U-ry-Yjj"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="GVD-Xg-ivO"/>
+                    <navigationItem key="navigationItem" title="¿Qué es el COVID-19?" id="GVD-Xg-ivO"/>
+                    <connections>
+                        <outlet property="mensajeCovidLabel" destination="TS4-V1-xB8" id="Awo-ND-HyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpy-l8-r3Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,6 +229,7 @@
         <!--Navigation Controller-->
         <scene sceneID="oB3-hf-NMc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlf-Ut-iXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KtU-To-v4c" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kCf-pe-QMu">
@@ -147,15 +245,179 @@
                         <segue destination="R0d-JP-OEo" kind="relationship" relationship="rootViewController" id="Efa-E8-WEJ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlf-Ut-iXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="231.8840579710145" y="70.982142857142847"/>
         </scene>
+        <!--Sintomas-->
+        <scene sceneID="bZK-jQ-ffE">
+            <objects>
+                <viewController id="XOJ-cR-kC9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c2D-Vz-B56">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tos/Estornudos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1z1-2Y-GbO">
+                                <rect key="frame" x="134" y="143" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPM-0n-czj">
+                                <rect key="frame" x="20" y="113" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dolor de cabeza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7k5-0g-p8K">
+                                <rect key="frame" x="134" y="231" width="125" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ChY-3A-9ms">
+                                <rect key="frame" x="20" y="201" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fiebre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sga-xn-Guf">
+                                <rect key="frame" x="134" y="319" width="48" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Puede estar acompañado de alguno de los siguientes sintomas:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEV-0d-Xum">
+                                <rect key="frame" x="20" y="392" width="362" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvM-Nb-tun">
+                                <rect key="frame" x="20" y="289" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dolor de garganta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnj-nG-FXT">
+                                <rect key="frame" x="134" y="497" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cs6-ne-PtR">
+                                <rect key="frame" x="20" y="467" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Escurrimiento nasal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFE-wt-jfJ">
+                                <rect key="frame" x="134" y="585" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pnb-BK-lC4">
+                                <rect key="frame" x="20" y="555" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dificultad para respirar(casos más graves)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P75-f9-PrL">
+                                <rect key="frame" x="134" y="658" width="248" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbt-IG-47Q">
+                                <rect key="frame" x="20" y="643" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2On-Zk-z5l">
+                                <rect key="frame" x="20" y="731" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dolores en musculos o articulaciones" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5k-cu-uwn">
+                                <rect key="frame" x="134" y="746" width="223" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fgC-t1-QuH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sintomas" id="v3l-bP-iYi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kRO-k8-5FN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="231.8840579710145" y="789.50892857142856"/>
+        </scene>
+        <!--Medidas de prevención-->
+        <scene sceneID="IRU-ll-F9l">
+            <objects>
+                <viewController id="5va-q7-ENN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N3T-dZ-tKC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evita saludar de mano, beso o abrazo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FJy-Cj-yz8">
+                                <rect key="frame" x="154" y="227" width="260" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qbw-3T-VcD">
+                                <rect key="frame" x="40" y="227" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Uso de cubrebocas al salir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-rY-wNk">
+                                <rect key="frame" x="154" y="345" width="201" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i8I-IE-HVP">
+                                <rect key="frame" x="40" y="315" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Evita escupir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-dU-Xfd">
+                                <rect key="frame" x="154" y="433" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WmN-GW-kAB">
+                                <rect key="frame" x="40" y="403" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lava tus manos constantemente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aea-gn-wuG">
+                                <rect key="frame" x="154" y="521" width="247" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFc-0A-S5Z">
+                                <rect key="frame" x="40" y="491" width="87" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ULY-Sy-Cds"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Medidas de prevención" id="faJ-nO-prc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BhI-LS-CBb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.91304347826099" y="789.50892857142856"/>
+        </scene>
     </scenes>
+    <designables>
+        <designable name="TS4-V1-xB8"/>
+    </designables>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="iconCovid" width="32" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
