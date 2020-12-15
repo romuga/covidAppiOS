@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StatusCovidViewController: UIViewController {
+class StatusCovidViewController: UIViewController, UISearchBarDelegate, CovidManagerDelegate {
 
     func error(cualError: Error) {
         print(cualError.localizedDescription)
@@ -18,13 +18,14 @@ class StatusCovidViewController: UIViewController {
     func actualizarDatos(datos: CovidModelo){
         DispatchQueue.main.async {
             self.namePaisLabel.text = datos.nombreCiudad
-            self.imagePais.image = UIImage(named: datos.bandera)
+           // self.imagePais.image = UIImage(named: datos.bandera)
             self.casosLabel.text = datos.casosText
             self.muertesLabel.text = datos.muertesText
             self.recuperadosLabel.text = datos.recuperadosText
         }
     }
     var covidManager = CovidManager()
+    var searchController: UISearchController?
     @IBOutlet weak var imagePais: UIImageView!
     @IBOutlet weak var namePaisLabel: UILabel!
     @IBOutlet weak var casosLabel: UILabel!
@@ -36,7 +37,23 @@ class StatusCovidViewController: UIViewController {
     @IBOutlet weak var imageRecuperados: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        covidManager.fetchCovid(nombreCiudad: "Mexico")
+        covidManager.delegado = self
+        
+        searchPais.delegate = self
+        
 
+    }
+    private func searchBarTextDidEndEditing(_ searchBar: UISearchBar) -> Bool {
+        if searchPais.text != ""{
+            return true
+        }else{
+            searchPais.placeholder = "Buscar ciudad"
+            return false
+        }
+    }
+    @IBAction func buscarPais(_ sender: UIButton) {
+        covidManager.fetchCovid(nombreCiudad: searchPais.text!)
     }
     
 

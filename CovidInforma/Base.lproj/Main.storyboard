@@ -116,6 +116,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="stopTyping3:" destination="R0d-JP-OEo" eventType="touchUpInside" id="3k7-0k-TNc"/>
                                     <segue destination="5va-q7-ENN" kind="show" id="TSe-Ib-Zlm"/>
                                 </connections>
                             </button>
@@ -126,6 +127,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="stopTyping2:" destination="R0d-JP-OEo" eventType="touchUpInside" id="Z1W-1z-gg9"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="F9R-I4-m6v"/>
                                 </connections>
                             </button>
@@ -173,7 +175,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EI9-rh-jGr">
-                                <rect key="frame" x="0.0" y="111" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="111" width="359" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -242,6 +244,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIw-b0-MHX">
+                                <rect key="frame" x="359" y="111" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.087097757689999999" green="0.67877538069999999" blue="0.62981246660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                <connections>
+                                    <action selector="buscarPais:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcC-Nm-Xr7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -254,7 +267,6 @@
                         <outlet property="imagePais" destination="1ip-aj-KeO" id="3dr-0u-Cb9"/>
                         <outlet property="imageRecuperados" destination="CUw-Ri-h2H" id="xCS-W8-msd"/>
                         <outlet property="muertesLabel" destination="gS0-Yw-3zz" id="ecu-G8-j2Y"/>
-                        <outlet property="namePais" destination="uWp-gz-Yp4" id="iwG-Sf-Fht"/>
                         <outlet property="namePaisLabel" destination="uWp-gz-Yp4" id="hWh-WD-RIG"/>
                         <outlet property="recuperadosLabel" destination="yjz-mg-8a9" id="2AZ-P3-lB3"/>
                         <outlet property="searchPais" destination="EI9-rh-jGr" id="Thq-J4-0mT"/>
@@ -456,6 +468,7 @@
     </designables>
     <resources>
         <image name="iconCovid" width="32" height="32"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
