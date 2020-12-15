@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		55FD816009F378E2E753B530 /* Pods_CovidInforma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A70965762849CEF50F9FD4 /* Pods_CovidInforma.framework */; };
+		910368DC25886FA6008D1C24 /* CovidManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910368DB25886FA6008D1C24 /* CovidManager.swift */; };
+		910368DF25886FB7008D1C24 /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910368DE25886FB7008D1C24 /* CovidData.swift */; };
+		910368E225886FC4008D1C24 /* CovidModelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910368E125886FC4008D1C24 /* CovidModelo.swift */; };
 		91E04DD8258070CF00C73307 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E04DD7258070CF00C73307 /* AppDelegate.swift */; };
 		91E04DDA258070CF00C73307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E04DD9258070CF00C73307 /* SceneDelegate.swift */; };
 		91E04DDC258070CF00C73307 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E04DDB258070CF00C73307 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 
 /* Begin PBXFileReference section */
 		704B9545EF6E615F8D4D54FD /* Pods-CovidInforma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidInforma.debug.xcconfig"; path = "Target Support Files/Pods-CovidInforma/Pods-CovidInforma.debug.xcconfig"; sourceTree = "<group>"; };
+		910368DB25886FA6008D1C24 /* CovidManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidManager.swift; sourceTree = "<group>"; };
+		910368DE25886FB7008D1C24 /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
+		910368E125886FC4008D1C24 /* CovidModelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidModelo.swift; sourceTree = "<group>"; };
 		91E04DD4258070CF00C73307 /* CovidInforma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidInforma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E04DD7258070CF00C73307 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91E04DD9258070CF00C73307 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +93,9 @@
 				91E1321325847FA7006F563C /* SintomasViewController.swift */,
 				91E1321625847FC8006F563C /* StatusCovidViewController.swift */,
 				91E1321925848002006F563C /* MedidasViewController.swift */,
+				910368DB25886FA6008D1C24 /* CovidManager.swift */,
+				910368DE25886FB7008D1C24 /* CovidData.swift */,
+				910368E125886FC4008D1C24 /* CovidModelo.swift */,
 			);
 			path = CovidInforma;
 			sourceTree = "<group>";
@@ -215,8 +224,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				91E1321425847FA7006F563C /* SintomasViewController.swift in Sources */,
+				910368DF25886FB7008D1C24 /* CovidData.swift in Sources */,
 				91E04DDC258070CF00C73307 /* ViewController.swift in Sources */,
 				91E1321725847FC8006F563C /* StatusCovidViewController.swift in Sources */,
+				910368E225886FC4008D1C24 /* CovidModelo.swift in Sources */,
+				910368DC25886FA6008D1C24 /* CovidManager.swift in Sources */,
 				91E04DD8258070CF00C73307 /* AppDelegate.swift in Sources */,
 				91E1321A25848002006F563C /* MedidasViewController.swift in Sources */,
 				91E04DDA258070CF00C73307 /* SceneDelegate.swift in Sources */,
