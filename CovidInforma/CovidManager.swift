@@ -21,6 +21,7 @@ struct CovidManager {
     
     func fetchCovid(nombreCiudad: String){
         let urlString = "\(covidURL)\(nombreCiudad)"
+        print(urlString)
         realizarSolicitud(urlString: urlString)
     }
     
@@ -63,7 +64,7 @@ struct CovidManager {
         do{
             let dataDecodificada = try decoder.decode(CovidData.self, from: covidDatos)
             let ciudad = dataDecodificada.country
-            let bandera = dataDecodificada.countryInfo[0].flag
+            let bandera = dataDecodificada.countryInfo.flag
             let casos = dataDecodificada.todayCases
             let muertes = dataDecodificada.todayDeaths
             let recuperados = dataDecodificada.todayRecovered

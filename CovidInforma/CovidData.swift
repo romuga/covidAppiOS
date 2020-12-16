@@ -9,7 +9,7 @@ import Foundation
 
 struct CovidData: Codable {
     let country: String
-    let countryInfo: [CountryInfo]
+    let countryInfo: CountryInfo
     let todayCases: Int
     let todayDeaths: Int
     let todayRecovered: Int

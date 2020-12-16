@@ -12,13 +12,18 @@ class StatusCovidViewController: UIViewController, UISearchBarDelegate, CovidMan
     func error(cualError: Error) {
         print(cualError.localizedDescription)
         DispatchQueue.main.async {
-            //self.ciudadLabel.text = "Verifica tu escritura"
+            let alertVacio = UIAlertController(title: "Alerta", message: "Ingresa un país válido", preferredStyle: .alert)
+            let actionVacio = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertVacio.addAction(actionVacio)
+            self.present(alertVacio, animated: true, completion: nil  )
         }
     }
     func actualizarDatos(datos: CovidModelo){
         DispatchQueue.main.async {
+            let url = URL(string: datos.bandera)
+            let data = try? Data(contentsOf: url!)
             self.namePaisLabel.text = datos.nombreCiudad
-           // self.imagePais.image = UIImage(named: datos.bandera)
+           self.imagePais.image = UIImage(data: data!)
             self.casosLabel.text = datos.casosText
             self.muertesLabel.text = datos.muertesText
             self.recuperadosLabel.text = datos.recuperadosText

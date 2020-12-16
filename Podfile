@@ -7,5 +7,7 @@ target 'CovidInforma' do
 
   # Pods for CovidInforma
 pod 'CLTypingLabel'
+pod 'GIFImageView'
+pod 'SwiftyGif'
 
 end

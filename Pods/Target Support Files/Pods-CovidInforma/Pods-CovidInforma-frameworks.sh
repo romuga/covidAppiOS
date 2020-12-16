@@ -176,9 +176,13 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CLTypingLabel/CLTypingLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GIFImageView/GIFImageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CLTypingLabel/CLTypingLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/GIFImageView/GIFImageView.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
